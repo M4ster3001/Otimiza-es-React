@@ -10,7 +10,7 @@ function ProductItemComponent({ product, onAddToWishList }: ProductItemProps) {
 
     return (
         <div>
-            {product.title} - <strong>R$ {product.price.toFixed(2)}</strong>
+            {product.title} - <strong>R$ {product.priceFormatted}</strong>
             <button onClick={() => onAddToWishList(product.id)}>Add to wishlist</button>
         </div>
     )
